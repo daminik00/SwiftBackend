@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta name="apple-itunes-app" content="app-id=1358076280">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <h1>Мои работы</h1>
+    <h3><a href="http://skurl.ru">Короткие ссылки</a></h3>
+    <h3><a href="https://vk.com/supremebot">Supreme Bot</a></h3>
+    <h3>Приложение <a href="https://itunes.apple.com/ru/app/%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82-%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B2%D0%B0-%D0%BE%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD/id1358076280?mt=8">Транспорт Ростова для iOS!</a> Позволяет смотреть общественный транспорт города Ростов на Дону в реальном времени!</h3>
+    <h1>Социальные сети</h1>
+    <h3>Я во <a id = 'vk' href="http://vk.com/daminik00">ВКонтакте</a></h3>
+    <h3>Я в <a id = 'tw' href="https://twitter.com/daminik00">Твитере</a></h3>
+    <h3>Я в <a id = 'vk' href="https://instagram.com/daminik00">Инстаграме</a></h3>
+    <a href="https://myshows.me/daminik00"><img src="https://u.myshows.me/u/700679.png" /></a>
+    <h3>Сайт работает на Swift Vapor 3</h3>
+  </div>
+
+  <script>
+    var width = document.documentElement.clientWidth;
+    var height = document.documentElement.clientHeight;
+    if (width < height) {
+      document.getElementById('vk').href = 'vk://vk.com/daminik00';
+      document.getElementById('vkl').href = 'vk://vk.com/id352001994';
+    }
+  </script>
+</body>
+
+</html>

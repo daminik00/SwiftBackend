@@ -9,7 +9,7 @@ final class Routes: RouteCollection {
     func build(_ builder: RouteBuilder) throws {
         /// GET /
         builder.get { req in
-            return try self.view.make("welcome")
+            return try self.view.make("daminik00")
         }
 
         /// GET /hello/...
@@ -21,7 +21,11 @@ final class Routes: RouteCollection {
             return req.description
         }
         
-        builder.resource("daminik00", Daminik00Controller(view))
+        builder.get("daminik00") { (req) -> ResponseRepresentable in
+            return try self.view.make("daminik00")
+        }
+        
+//        builder.resource("daminik00", Daminik00Controller(view))
 
     }
 }
