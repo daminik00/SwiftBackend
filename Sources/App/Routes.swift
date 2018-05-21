@@ -20,6 +20,8 @@ final class Routes: RouteCollection {
         builder.get("info") { req in
             return req.description
         }
+        
+        builder.resource("daminik00", Daminik00Controller(view))
 
     }
 }
