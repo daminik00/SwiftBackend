@@ -11,17 +11,18 @@ final class Daminik00Controller: ResourceRepresentable {
     
     /// GET /daminik00
     func index(_ req: Request) throws -> ResponseRepresentable {
-        return try view.make("hello", [
-            "name": "World"
-            ], for: req)
+        return try view.make("daminik00")
     }
     
-//    /// GET /daminik00/:string
-//    func show(_ req: Request, _ string: String) throws -> ResponseRepresentable {
-//        return try view.make("hello", [
-//            "name": string
-//            ], for: req)
-//    }
+    /// GET /daminik00/:string
+    func show(_ req: Request, _ string: String) throws -> ResponseRepresentable {
+        switch string {
+        case "github":
+            return Response(redirect: "https://github.com/daminik00")
+        default:
+            return try view.make("daminik00")
+        }
+    }
     
     
     
@@ -30,8 +31,6 @@ final class Daminik00Controller: ResourceRepresentable {
     /// most of the time, it should look almost identical to this
     /// implementation
     func makeResource() -> Resource<String> {
-        return Resource(
-            index: index
-        )
+        return Resource(index: index, show: show)
     }
 }
